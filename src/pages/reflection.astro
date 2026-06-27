@@ -1,0 +1,99 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import img from "../../public/images/study_plan_reflection.png";
+---
+
+<Layout pageTitle="Study Reflection">
+    <div class="page-container">
+        <h1>Study Reflection</h1>
+
+        <div class="reflection-container">
+            <div class="image-wrapper">
+                <Image
+                    src={img}
+                    alt="Study Reflection Portrait"
+                    class="reflection-image"
+                />
+            </div>
+            <div class="reflection-text">
+                <p>
+                    My study plan remained largely the same as the one I
+                    originally came up with. My original intention was to begin
+                    with AI-oriented courses and then explore GMT-related
+                    topics, to get a broader view of directions I might want to
+                    pursue, both during my thesis and my career after
+                    graduation. Notably, I ended up learnign that I enjoy
+                    project-focused courses significantly more, so I decided to
+                    switch out Natural Language Processing with Serious Gaming,
+                    which better aligned with my learning goals.
+                </p>
+                <p>
+                    During this year, I believe I learned a lot about doing
+                    research, both in theory and in practice. I carried out a
+                    variety of user studies, using interviews, surveys, vignette
+                    and observational studies, and gained experience with
+                    analyzing both qualitative and quantitative data. I also
+                    learned a lot about human factors in courses like Multimodal
+                    Interaction and Cognitive Modeling, while also learning how
+                    to code functional prototypes in courses like Serious
+                    Gaming, Interaction Technology Innovation and Machine
+                    Learning for Human Vision and Language.
+                </p>
+                <p>
+                    For my remaining year, I decided to narrow my focus, and
+                    prioritize courses that I anticipate will be most useful for
+                    my thesis. To that effect, I dropped both Sound and Music
+                    Technology and Social Computing from my plan. I added
+                    Natural Language Generation as an additional course I would
+                    be interested in taking, depending on how demanding my
+                    thesis ends up being.
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .reflection-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .image-wrapper:hover {
+        transform: translateY(-4px);
+    }
+
+    .reflection-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .reflection-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--color-text);
+        text-align: justify;
+    }
+
+    .reflection-text p {
+        margin-bottom: 1.5rem;
+    }
+</style>
