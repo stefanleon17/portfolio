@@ -18,8 +18,8 @@ export const SITE_DATA = {
 
     // Bluesky handle (without the @)
     bluesky: "",
-    linkedin: "https://www.linkedin.com/in/stefan-leon-1b4b12243/",
-    github: "whydevils",
+    linkedin: "stefan-leon-1b4b12243",
+    github: "stefanleon17",
 
     // Google Scholar ID (found in your Scholar profile URL)
     // Example: https://scholar.google.com/citations?user=YOUR_ID_HERE
