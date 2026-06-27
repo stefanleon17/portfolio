@@ -33,5 +33,5 @@ export const SITE_DATA = {
 
     // Base URL of your deployed site (no trailing slash), e.g. "https://your-username.github.io"
     // Used for Open Graph tags. Leave empty if you haven't deployed yet.
-    siteUrl: "",
+    siteUrl: "https://stefanleon17.github.io/portfolio",
 };
